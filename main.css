@@ -1,0 +1,73 @@
+.cond
+	margin-bottom: 100px
+	&__h1
+		text-align: center
+		font-size: 34px
+		margin: 20px 0
+	&__h2
+		text-align: center
+		font-size: 26px
+		margin: 20px 0
+	&__items
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item
+		width: 32%
+		padding: 15px
+		margin-bottom: 2%
+		border: 1px solid $hot
+		transition: all 0.2s ease
+		cursor: pointer
+		&:last-child
+			margin-right: auto
+			margin-left: 23px
+		&:hover
+			box-shadow: 0px 0px 5px $hot
+	&__item_img img
+		margin: 0 auto
+	&__title
+		text-align: center
+		min-height: 50px
+	&__spec_row
+		margin-bottom: 10px
+	&__order
+		position: relative
+		z-index: -1
+	&__order.green
+		padding-left: 18px
+		color: #008623
+	&__order.yellow
+		padding-left: 18px
+		color: #dbe65c
+		&::before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 0px
+			width: 13px
+			height: 13px
+			margin-top: -6px
+			background: #dbe65c
+			-moz-border-radius: 50%
+			-webkit-border-radius: 50%
+			-khtml-border-radius: 50%
+			border-radius: 50%
+
+	&__order::before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 0px
+		width: 13px
+		height: 13px
+		margin-top: -6px
+		background: #008623
+		-moz-border-radius: 50%
+		-webkit-border-radius: 50%
+		-khtml-border-radius: 50%
+		border-radius: 50%
+	&__price_new
+		font-weight: bold
+		font-size: 18px
+		margin-top: 10px
